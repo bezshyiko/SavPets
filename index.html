@@ -1,179 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221024172547">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «SavPets»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «SavPets»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt=""></picture>
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__link">
+								<a href="#">Início</a>
+							</li>
+							<li class="menu__link">
+								<a href="#">Centrais</a>
+							</li>
+							<li class="menu__link">
+								<a href="#">Perdidos</a>
+							</li>
+							<li class="menu__link">
+								<a href="#">Achados </a>
+							</li>
+							<li class="menu__link">
+								<a href="#">Adote</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<button data-da=".menu, 767.98" class="header__button button">cadastre-se</button>
+				<button class="header__burger icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<main class="page">
+			<section data-fullscreen class="main__block">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__item main-text">
+							<h3 data-watch class="main-text__name">SavPets</h3>
+							<h1 data-watch class="main-text__title">Ajude os animais
+								que precisam de você</h1>
+							<h2 data-watch class="main-text__subtitle">A SavPets é mais que uma plataforma, ela é a esperança de unir um animal a quem irá oferecer todo o cuidado e carinho que ele merece.</h2>
+							<div data-watch class="main-text__buttons">
+								<button data-watch class="main-text__button button">Saiba Mais</button>
+								<button data-watch class="main-text__button button">Adote um animal</button>
+							</div>
+						</div>
+						<div class="main__item main-image">
+							<picture>
+								<img data-watch class="main-image__plate" data-prlx-a="100" data-prlx-mouse data-prlx-cx="100" data-prlx-cy="100" src="img/plate.png" alt="">
+							</picture>
+							<picture>
+								<img data-watch class="main-image__cat" data-prlx-mouse data-prlx-cx="100" data-prlx-cy="100" src="img/cat.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="help__block">
+				<div class="help__container">
+					<h2 class="help__title">Escolha uma maneira de ajudar os animais que você gosta</h2>
+					<div class="help__cards cards-block">
+						<div data-watch class="cards-block__card">
+							<button class="cards-block__button button">Adoção</button>
+							<h3 class="cards-block__title">
+								Uma nova companhia para um pet
+							</h3>
+							<p class="cards-block__subtitle">
+								Todo dia milhares de animais são encontrados na rua sem dono, ajude a mudar isto.
+							</p>
+							<picture><source srcset="img/dog1.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="70" data-prlx-cy="200" src="img/dog1.png" alt="" class="cards-block__img"></picture>
+						</div>
+						<div data-prlx data-watch class="cards-block__card">
+							<button class="cards-block__button button">voluntariado</button>
+							<h3 class="cards-block__title">Junte-se a uma plataforma dedicada a auxiliar os animais</h3>
+							<p class="cards-block__subtitle">
+								Cadastre sua organização para oferecer apoio a quem estiver precisando.
+							</p>
+							<picture><source srcset="img/dog2.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500" src="img/dog2.png" alt="" class="cards-block__img"></picture>
+						</div>
+						<div data-watch class="cards-block__card">
+							<button class="cards-block__button button">colaboração</button>
+							<h3 class="cards-block__title">
+								Apoio durante a procura de animais perdidos
+							</h3>
+							<p class="cards-block__subtitle">
+								Abrindo novos chamados, você notificará a todos sobre o desaparecimento.
+							</p>
+							<picture><source srcset="img/cat3.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500" src="img/cat3.png" alt="" class="cards-block__img"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about__block">
+				<div class="about__container">
+					<div class="about__row top">
+						<div class="about__item">
+							<div class="about__body-img">
+								<picture><source srcset="img/about.webp" type="image/webp"><img data-watch class="about__img" src="img/about.png" alt=""></picture>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__wrapper">
+								<h2 data-watch class="about__title">Junte-se a uma plataforma dedicada a auxiliar os animais</h2>
+							</div>
+							<div class="about__wrapper">
+								<p data-watch class="about__subtitle">A SavPets é uma comunidade pronta a ajudar os animais que precisam de algum cuidado ou atenção. Nela você poderá encontrar diversas opções de animais que podem estar disponíveis para adoção, além de ajudar na procura dos que estão perdidos, para que juntos possamos garantir que o pet esteja em ótimas mãos.</p>
+							</div>
+						</div>
+					</div>
+					<div class="about__row bottom">
+						<div class="about__item">
+							<h2 data-watch class="about__title">O que nos torna diferentes dos outros</h2>
+							<p data-watch class="about__subtitle">O que nos torna diferentes dos outros
+								Aqui o importante é a proteção e fecilidade dos animais. Na SavPets é possível realizar de forma rápida e fácil a criação de novos alertas de animais perdidos, além de ser possível encontrar organizações que podem ajudar as pessoas no que precisarem.
+								Saiba Mais</p>
+						</div>
+						<div class="about__item">
+							<div class="about__cards cards-about">
+								<div data-watch class="cards-about__card">
+									<div class="cards-about__icon">
+										<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt=""></picture>
+									</div>
+									<h3 class="cards-about__title">Suporte Ativo</h3>
+									<p class="cards-about__subtitle">Contate-nos pelo email: <a href="mailto:savpets@gmail.com">savpets@gmail.com</a></p>
+								</div>
+								<div data-watch class="cards-about__card">
+									<div class="cards-about__icon">
+										<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt=""></picture>
+									</div>
+									<h3 class="cards-about__title">Funções grátis</h3>
+									<p class="cards-about__subtitle">Utilize toda a plataforma de maneira gratuita.</p>
+								</div>
+								<div data-watch class="cards-about__card">
+									<div class="cards-about__icon">
+										<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt=""></picture>
+									</div>
+									<h3 class="cards-about__title">Controle rápido</h3>
+									<p class="cards-about__subtitle">Gerencie seus alertas de forma prática.</p>
+								</div>
+								<div data-watch class="cards-about__card">
+									<div class="cards-about__icon">
+										<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt=""></picture>
+									</div>
+									<h3 class="cards-about__title">Interface simples</h3>
+									<p class="cards-about__subtitle">Padrão de navegação entre as páginas.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work__block">
+				<div class="work__container">
+					<div class="work__item">
+						<h2 data-watch class="work__title">Pronto para começar na SavPets?</h2>
+						<p data-watch class="work__subtitle">Ajudando os animais que precisam de cuidados a ficarem protegidos, bem cuidados e felizes, oferecendo todo o suporte necessário para que isso possa se tornar cada vez mais realidade.</p>
+					</div>
+					<div class="work__item"><button data-watch class="work__button button">começar</button></div>
+				</div>
+			</section>
+			<section class="contacts__block">
+				<div class="contacts__container">
+					<div class="contacts__item">
+						<div class="contacts__content">
+							<h2 data-watch class="contacts__title">Como podemos ajudá-lo?</h2>
+							<p data-watch class="contacts__subtitle">Sinta-se a vontade para nos contatar quando quiser.</p>
+							<div class="contacts__data">
+								<a data-watch href="" class="contacts__contact">
+									<span class="contacts__icon icon-instagram"></span>
+									<span class="contacts__text">@savpets</span>
+								</a>
+								<a data-watch href="tel:+11912345678" class="contacts__contact">
+									<span class="contacts__icon icon-messenger"></span>
+									<span class="contacts__text">(11) 9 1234-5678</span>
+								</a>
+								<a data-watch href="mailto:savpets@gmail.com" class="contacts__contact">
+									<span class="contacts__icon icon-email"></span>
+									<span class="contacts__text">savpets@gmail.com</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__item">
+						<form data-watch action="#" class="contacts__form form">
+							<div class="form__item">Preenchimento obrigatório *</div>
+							<div class="form__item form-wrapper">
+								<div class="form__row">
+									<label class="form__name" for="name">
+										<input data-required class="form__input" placeholder=" " type="text" name="name" id="name">
+										<span class="form__label">Name</span>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__email" for="email">
+										<input data-required class="form__input" placeholder=" " type="email" name="email" id="email">
+										<span class="form__label">Email</span>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__theme" for="theme">
+										<input data-required class="form__input" placeholder=" " type="text" name="theme" id="theme">
+										<span class="form__label">Assunto</span>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__comment" for="comment">
+										<input data-required class="form__input" placeholder=" " type="text" name="comment" id="comment">
+										<span class="form__label">Mensagem</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button button">enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers="767,max" class="footer__top spollers">
+					<div class="footer__column spollers__item">
+						<h3 data-spoller class="footer__title spollers__title">CONTEÚDO</h3>
+						<ul class="footer__list spollers__body">
+							<li class="footer__link"><a href="">Home</a></li>
+							<li class="footer__link"><a href="">Centrais</a></li>
+							<li class="footer__link"><a href="">Achados</a></li>
+							<li class="footer__link"><a href="">Perdidos</a></li>
+						</ul>
+					</div>
+					<div class="footer__column spollers__item">
+						<h3 data-spoller class="footer__title spollers__title">AJUDA</h3>
+						<ul class="footer__list spollers__body">
+							<li class="footer__link"><a href="">Achados</a></li>
+							<li class="footer__link"><a href="">Perdidos</a></li>
+							<li class="footer__link"><a href="mailto: savpets@gmail.com">savpets@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="footer__column spollers__item">
+						<h3 data-spoller class="footer__title spollers__title">PLATAFORMA</h3>
+						<ul class="footer__list spollers__body">
+							<li class="footer__link"><a href="">Sobre</a></li>
+							<li class="footer__link"><a href="">Destaques</a></li>
+							<li class="footer__link"><a href="">Termos e condições</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">REDES SOCIAIS</h3>
+						<div class="footer__cotacts">
+							<div class="footer__icons">
+								<a href="" class="footer__contact contacts__icon icon-instagram"></a>
+								<a href="" class="footer__contact contacts__icon icon-messenger"></a>
+								<a href="" class="footer__contact contacts__icon icon-email"></a>
+							</div>
+							<div class="footer__text">Comece agora a ajudar os pets</div>
+							<button class="footer__button button">CRIE UMA CONTA</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom footer-bottom">
+				<div class="footer__container">
+					<div class="footer-bottom__content">
+						<div class="footer-bottom__column">
+							<picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="" class="footer-bottom__logo"></picture>
+							<span class="footer-bottom__date">© 2022 SavPets</span>
+						</div>
+						<div class="footer-bottom__column">
+							<span>Todos os direitos reservados.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
 		</div>
 	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221024172547"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
