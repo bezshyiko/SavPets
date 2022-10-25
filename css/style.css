@@ -163,6 +163,132 @@ h6 {
   padding: 0 0.9375rem;
 }
 
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+.popup-show body::after {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  -webkit-transition: visibility 0.8s ease 0s;
+  -o-transition: visibility 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  position: relative;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  background-color: #eee;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.lock .popup__content {
+  visibility: visible;
+}
+
+.popup__close {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: none;
+}
+
+.popup__close::after,
+.popup__close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+}
+
+.popup__close::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popup__close::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .spollers__title {
   cursor: default;
   position: relative;
@@ -850,9 +976,9 @@ body {
 }
 
 .cards-block__card:nth-child(1) {
-  -webkit-transition: all 0.5s ease-in-out 0.5s;
-  -o-transition: all 0.5s ease-in-out 0.5s;
-  transition: all 0.5s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.2s;
+  -o-transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .cards-block__card:nth-child(1)._watcher-view {
@@ -863,9 +989,9 @@ body {
 }
 
 .cards-block__card:nth-child(2) {
-  -webkit-transition: all 0.9s ease-in-out 0.5s;
-  -o-transition: all 0.9s ease-in-out 0.5s;
-  transition: all 0.9s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.4s;
+  -o-transition: all 0.5s ease-in-out 0.4s;
+  transition: all 0.5s ease-in-out 0.4s;
 }
 
 .cards-block__card:nth-child(2)._watcher-view {
@@ -876,9 +1002,9 @@ body {
 }
 
 .cards-block__card:nth-child(3) {
-  -webkit-transition: all 1.3s ease-in-out 0.5s;
-  -o-transition: all 1.3s ease-in-out 0.5s;
-  transition: all 1.3s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.6s;
+  -o-transition: all 0.5s ease-in-out 0.6s;
+  transition: all 0.5s ease-in-out 0.6s;
 }
 
 .cards-block__card:nth-child(3)._watcher-view {
@@ -892,6 +1018,7 @@ body {
   background-color: #A5CBE0;
   color: white;
   margin: 0px 0px 20px 0px;
+  border: #A5CBE0 1px solid;
 }
 
 .cards-block__title {
@@ -1499,6 +1626,114 @@ body {
   background-color: #A5CBE0;
   color: white;
   width: 140px;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-login {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 315px;
+          flex: 0 0 315px;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0px 0px 1.25rem 0px;
+}
+
+.login__social {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0px 0px 1.25rem 0px;
+  background-color: #A5CBE0;
+  padding: 0.625rem 0.5rem 0.625rem 1.875rem;
+  color: white;
+  position: relative;
+  text-align: right;
+  width: auto;
+  position: relative;
+}
+
+.login__social::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: white;
+  position: absolute;
+  top: calc(50% - 0.625rem);
+  left: 3%;
+  border-radius: 0.3125rem;
+}
+
+.login__social::after {
+  content: "G";
+  font-weight: 700;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  color: #A5CBE0;
+  position: absolute;
+  top: calc(50% - 0.46875rem);
+  left: 3%;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__form > span {
+  color: #A5CBE0;
+  text-align: center;
+  display: block;
+  margin: 0px 0px 0.625rem 0px;
+}
+
+.login__form > span a {
+  color: #323F8D;
+}
+
+.login__form > span a:hover {
+  text-decoration: underline;
+}
+
+.form-login__inputs {
+  margin: 0rem 0rem 1.25rem 0rem;
+}
+
+.form-login__button {
+  margin: 0rem 0rem 1.25rem 0rem;
 }
 
 @media (min-width: 47.99875em) {
@@ -2579,5 +2814,9 @@ body {
   .form__button:hover {
     color: #323F8D;
     border: 0;
+  }
+
+  .login__social:hover {
+    background-color: black;
   }
 }

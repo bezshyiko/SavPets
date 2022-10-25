@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="pt">
 
 <head>
-	<title>HomePage</title>
+	<title>SavPets</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221024172547">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221025165427">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 						</ul>
 					</nav>
 				</div>
-				<button data-da=".menu, 767.98" class="header__button button">cadastre-se</button>
+				<button data-popup="#sign-up" data-da=".menu, 767.98" class="header__button button">cadastre-se</button>
 				<button class="header__burger icon-menu">
 					<span></span>
 					<span></span>
@@ -292,17 +292,39 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="sign-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper popup-login">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="login">
+					<h3 class="login__title">Sign up</h3>
+					<div class="login__social">
+						<a class="login__button">Sign up with Google</a>
+					</div>
+					<form action="" class="login__form form-login">
+						<span>or sign up with email</span>
+						<div class="form-login__inputs">
+							<div class=" form-login__input form__row">
+								<label class="form__name" for="name">
+									<input data-required class="form__input" placeholder=" " type="text" name="name" id="name">
+									<span class="form__label">Name</span>
+								</label>
+							</div>
+							<div class="form-login__input form__row">
+								<label class="form__email" for="email">
+									<input data-required class="form__input" placeholder=" " type="email" name="email" id="email">
+									<span class="form__label">Email</span>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="form-login__button form__button button">enviar</button>
+						<span>Already have an account? <a href="">Login in</a></span>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20221024172547"></script>
+	<script src="js/app.min.js?_v=20221025165427"></script>
 </body>
 
 </html>
