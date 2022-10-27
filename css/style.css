@@ -118,12 +118,20 @@ h6 {
   font-size: inherit;
 }
 
+body {
+  visibility: hidden;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+}
+
+.loaded body {
+  visibility: visible;
 }
 
 .wrapper {
