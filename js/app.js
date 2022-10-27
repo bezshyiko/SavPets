@@ -34,6 +34,13 @@
             return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
         }
     };
+    function addLoadedClass() {
+        window.addEventListener("load", (function() {
+            setTimeout((function() {
+                document.documentElement.classList.add("loaded");
+            }), 1e3);
+        }));
+    }
     function fullVHfix() {
         const fullScreens = document.querySelectorAll("[data-fullscreen]");
         if (fullScreens.length && isMobile.any()) {
@@ -863,6 +870,7 @@
     da.init();
     window["FLS"] = true;
     isWebp();
+    addLoadedClass();
     menuInit();
     fullVHfix();
     spollers();
